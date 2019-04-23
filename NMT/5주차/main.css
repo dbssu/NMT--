@@ -1,0 +1,12 @@
+body{
+    font-family: '돋움';
+}
+h3{
+    background-color: aquamarine;
+    color: cadetblue;
+}
+p{
+    background-color: burlywood;
+    color: coral;
+    font-size: 20pt;
+}

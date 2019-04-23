@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        가보고 싶은 나라는 ? <input type="text" list="country">
+        <datalist id="country">
+            <option value="미국">
+            <option value="한국">
+            <option value="중국">
+        </datalist>
+        <hr>
+        <h3>color</h3>
+        <input type="color" value="#238e23" onchange="document.body.style.color=this.value" />
+        <h3>date, time</h3>
+        <input type="month" value="2019.04" /><br>
+        <input type="week"/><br>
+        <input type="date" value="2019-04-02"/><br>
+        <input type="datetime-local" /><br>
+        <input type="time"/>
+        <hr>
+        <h3>number</h3>
+        <input type="number" min="0" max="10" step="2">
+        온도설정:10&deg;
+        <input type="range" min="0" max="100" list="temp"> 30&deg;
+        <datalist id="temp">
+            <option value="10" label="LOW"></option>
+            <option value="50" label="MEDIUM"></option>
+            <option value="109" label="HIGH"></option>
+        </datalist>
+    </body> 
+</html>
