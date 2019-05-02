@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div.container{
+                width:1200px;
+                border:1px solid red;
+                margin: 0px;
+                padding: 0px;
+            }
+            header{
+                border: 1px solid salmon;
+                text-align: center;
+                padding: 20px;
+            }
+            
+            div.inner{
+                height: 400px;
+                
+            }
+            section{
+                border: 1px solid darkgoldenrod;
+                float: left;
+                width: 400px;
+                height: 400px;
+                box-sizing: border-box;
+            }
+            footer{ /*float 속성 다음에 나오는 요소는 상속받기 때문에 엉뚱하게 나옴*/
+                height: 100px;
+                border: 1px solid blue;
+                text-align: center;
+                line-height: 100px;
+                /*float속성을 해제시켜야 함*/
+                clear: left; /*right,both(많이씀)*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>Header</header>
+            <div class="inner">
+                <section>section1</section>
+                <section>section2</section>
+                <section>section3</section>
+            </div>
+            <footer>footer</footer>
+        </div>
+    </body>
+</html>
