@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                background-color: salmon;
+                width: 100px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                transition-property: width;
+                transition-duration: 2s,1s;
+            }
+            #l1:hover{
+                width: 250px;
+                transition-timing-function: ease;
+            }
+            #l2:hover{
+                width: 250px;
+                transition-timing-function: ease-in;
+            }
+            #l3:hover{
+                width: 250px;
+                transition-timing-function: ease-in-out;
+            }
+            #l4:hover{
+                width: 250px;
+                transition-timing-function: ease-out;
+            }
+            #l5:hover{
+                width: 250px;
+                transition-timing-function: linear;
+            }
+        </style>
+    </head>
+    <body>
+        마우스를 박스로 가져가면 길이가 늘어납니다.
+        <div id="l1">Level1</div><br>
+        <div id="l2">Level2</div><br>
+        <div id="l3">Level3</div><br>
+        <div id="l4">Level4</div><br>
+        <div id="l5">Level5</div>
+    </body>
+</html>

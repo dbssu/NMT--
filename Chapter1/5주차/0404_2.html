@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css selector 연습</title>
+        <style>
+            *{
+                color: darkgreen;
+            }
+            h3{
+                color: brown;
+                text-decoration: underline;
+            }
+            .test{
+                background-color: mistyrose;
+                line-height: 150%;
+                font-size: 30pt;
+            }
+            body.main{
+                background-color: cornsilk;
+                font-family: '휴먼옛체';
+            }
+            a:link{
+                text-decoration: none;
+                font-size: 9pt;
+                color: gray;
+                font-family: '돋움';
+            }
+            a:visited{
+                text-decoration: none;
+                font-size: 9pt;
+                color: gray;
+                font-family: '돋움';
+            }
+            a:hover{
+                text-decoration: underline;
+                font-size: 9pt;
+                color: skyblue;
+                font-family: '돋움';
+            }
+            a:active{
+                text-decoration: underline;
+                font-size: 30pt;
+                color: red;
+                font-family: '돋움';
+            }
+        </style>
+    </head>
+    <body class="main">
+        <h3>Web programming</h3>
+        <hr>
+        <div class="test">1학기<strong>학습내용</strong></div>
+        <ul>
+            <li>HTML5</li>
+            <li><strong>css</strong></li>
+            <li>Javascript</li>
+        </ul>
+        <div>60점 이하는 F!</div>
+        <a href="http://www.daum.net">다음</a><br>
+        <a href="http://www.naver.com">네이버</a><br>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*
+        h1+ul{
+            background-color: salmon;
+            font-size: 2em;
+            color: lightslategrey;
+            line-height: 100%;
+            text-indent: 5px;
+        }
+        h1~ul{
+            color: red;
+            font-style: italic;
+        }
+        */
+        /*
+        a[href] {
+            background-color: yellowgreen;
+        }
+
+        a[target="_blank"] {
+            background-color: salmon;
+        }
+
+        a[target="_self"] {
+            background-color: rosybrown;
+        }
+
+        a[target="_parent"] {
+            background-color: cornflowerblue;
+        }
+
+        a[target="_top"] {
+            background-color: seagreen;
+        }*/
+        [class~="button"] {
+            border: 2px solid orange;
+        }
+        /*
+        a[title|="us"]{
+            background-color: coral;
+        }
+        a[title|="jap"]{
+            background-color: yellowgreen;
+        }
+        */
+        /*
+        a[title^="us"]{
+            background-color: coral;
+        }
+        a[title^="jap"]{
+            background-color: yellowgreen;
+        }
+        */
+        a[href $="hwp"]{
+            background-color: coral;
+        }
+        a[href $="xls"]{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>예약 방법 및 요금</h1>
+    <ul>
+        <li>직접통화</li>
+        <li>음성 남기기</li>
+    </ul>
+    <ul>
+        <li>1인: 40000</li>
+        <li>2인: 50000</li>
+        <li>3인: 70000</li>
+    </ul>
+    <hr>
+    <ul>
+        <li>메인메뉴 :</li>
+        <li><a href="#" target="_blank">Menu 1</a></li>
+        <li><a href="#" target="_self">Menu 2</a></li>
+        <li><a href="#" target="_parent">Menu 3</a></li>
+        <li><a href="#" target="_top">Menu 4</a></li>
+    </ul>
+    <hr>
+    <ul>
+        <li><a href="#" class="button">집으로</a></li>
+        <li><a href="#" class="flat button">게시판</a></li>
+        <li><a href="#">방명록</a></li>
+    </ul>
+    <hr>
+    <h3>외국어 서비스</h3>
+    <ul>
+        <li><a href="#" title="us">영어</a></li>
+        <li><a href="#" title="us-eng">영어33</a></li>
+        <li><a href="#">영어5</a></li>
+        <li><a href="#" title="japanese">일본어</a></li>
+        <li><a href="#">중국어</a></li>
+    </ul>
+    <hr>
+    <h3>파일 서비스</h3>
+    <ul>
+        <li><a href="a.hwp">한글</a></li>
+        <li><a href="a.xls">엑셀</a></li>
+    </ul>
+</body>
+
+</html>

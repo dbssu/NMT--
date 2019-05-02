@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css selector 연습</title>
+        <style>
+            ul strong{
+                color: olivedrab;
+            }
+            div> strong{
+                background: yellow;
+            }
+            ul{
+                background: cornflowerblue;
+            }
+            .warning{
+                color: blue;
+            }
+            h3:first-letter{
+                color: aqua;
+            }
+            h3, li{
+                color: coral;
+            }
+            #span{
+                background-color: darkkhaki;
+                color: salmon;
+            }
+        </style>
+    </head>
+    <body class="main">
+        <h3>Web programming</h3>
+        <hr>
+        <div class="test">1학기<strong>학습내용</strong></div>
+        <ul id="list">
+            <li id="span">HTML5</li>
+            <li><strong>css</strong></li>
+            <li id="span">Javascript</li>
+        </ul>
+        <div class="warning">60점 이하는 F!</div>
+        <a href="http://www.daum.net">다음</a><br>
+        <a href="http://www.naver.com">네이버</a><br>
+    </body>
+</html>
