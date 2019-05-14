@@ -3,22 +3,48 @@
     <head>
         <style>
             div{
-                background-color: wheat;
-                float: left;
-                border: 1px solid salmon;
+                background-color: salmon;
+                color: white;
+                border: 1px solid white;
                 margin: 5px;
                 width: 50px;
                 height: 50px;
                 text-align: center;
                 line-height: 50px;
             }
+            .div1{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .div2{
+                position: absolute;
+                top: 0;
+                right: 0;   
+            }
+            .div3{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .div4{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            .div5{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
         </style>
     </head>
     <body>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
     </body>
 </html>
