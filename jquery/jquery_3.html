@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+        $(function(){ //jquery의 window.onload이기 때문에 문서가 로딩되면 자동으로 실행되는 함수
+            $("#result").append("ready1");
+        })
+        $(function(){ 
+            $("#result").append("ready2");
+        })
+        $(function(){ 
+            $("#result").append("ready3");
+        })
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+    </body>
+</html>

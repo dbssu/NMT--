@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+            //jquery에서 사용하는 함수
+            //문서 객체를 조작할 때 사용하는 함수
+            //1. css()
+            //2. attr()
+            //3. html()
+            //4. 
+        </script>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <script>
+        //1. css함수
+        $("h1").css("color","coral");
+
+        //2. 태그 형태의 문자열로 넣음 : 문서객체 생성
+        $("<h2></h2>").appendTo("body").html("hello new world").css("color","orange");
+
+        //3. 객체를 직접 넣음
+        var header = document.querySelector("h1");
+        $(header).css("color","blue");
+        </script>
+    </body>
+</html>
