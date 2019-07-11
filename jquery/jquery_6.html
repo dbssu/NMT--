@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            //setter
+
+            //1. 문자열 문자열
+            $("h1").css("backgroundColor", "green");
+
+            //2. 객체로 지정
+            $("h1").css({
+                color : "orange",
+                backgroundColor : "yellow",
+                textAlign : "center"
+            })
+
+            //3. 함수 사용하는 방법
+            var color = ["red","blue","green"];
+            $("h1").css("color",function(index){
+                return color[index];
+            })
+
+            $("h1").css({
+                "color" : function(index){
+                return color[index]
+                }
+            })
+
+            //getter
+            var bg = $("h1").css("backgroundColor");
+            //alert(bg);
+        })
+    </script>
+</head>
+
+<body>
+    <h1>Hello Jquery1</h1>
+    <h1>Hello Jquery2</h1>
+    <h1>Hello Jquery3</h1>
+</body>
+
+</html>
